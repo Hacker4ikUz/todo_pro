@@ -17,7 +17,6 @@
 🤖 Telegram Bot
 
 Создай бота через @BotFather
-.
 
 Получи токен и укажи его в настройках проекта (settings.py).
 
@@ -27,30 +26,35 @@
 
 ### 1. Клонировать репозиторий
 
-```git clone https://github.com/Hacker4ikUz/todo_pro.git
-cd todo_pro```
+```
+git clone https://github.com/Hacker4ikUz/todo_pro.git
+cd todo_pro
+```
 
-2. Установить зависимости
+### 2. Установить зависимости
 ```pip install -r requirements.txt```
 
-3. Применить миграции
+### 3. Применить миграции
 ```python manage.py migrate```
 
-4. Запуск сервера Django
+### 4. Запуск сервера Django
 ```python manage.py runserver```
 
-5. Запуск Celery
+### 5. Запуск Celery
 ```celery -A todo worker -l info -P solo```
 
 ⚠️ Если Redis не установлен, поставь:
 
-```sudo apt install redis-server```
-```sudo service redis-server start```
+```
+sudo apt install redis-server
+sudo service redis-server start
+```
 
 
 
-🛠 Стек технологий
+### 🛠 Стек технологий
 
+```
 Python 3.x
 
 Django
@@ -62,7 +66,9 @@ Redis
 SQLite (или PostgreSQL)
 
 Telegram Bot API
+```
+### 👨‍💻 Автор
 
-👨‍💻 Автор
-
-Hacker4ikUz 🚀
+## Hacker4ik 🚀
+- Website: [Hacker4ik 🚀](https://hacker4ik.uz)
+- Telegram: [@Hacker4ik](https://t.me/Hacker4ik) 
