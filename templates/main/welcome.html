@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1>Добро пожаловать в Task Manager ✅</h1>
+    <p class="lead">Управляй своими задачами и будь продуктивным каждый день!</p>
+    <div class="mt-4">
+        <a href="{% url 'login' %}" class="btn btn-primary btn-lg me-2">Войти</a>
+        <a href="{% url 'register' %}" class="btn btn-success btn-lg">Зарегистрироваться</a>
+    </div>
+</div>
+{% endblock %}

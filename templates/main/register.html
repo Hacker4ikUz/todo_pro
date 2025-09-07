@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Регистрация</h2>
+<form method="post" class="mb-3">
+  {% csrf_token %}
+  <div class="mb-3">
+    <input type="text" name="username" class="form-control" placeholder="Имя пользователя" required>
+  </div>
+  <div class="mb-3">
+    <input type="password" name="password" class="form-control" placeholder="Пароль" required>
+  </div>
+  <div class="mb-3">
+    <input type="password" name="password2" class="form-control" placeholder="Повторите пароль" required>
+  </div>
+  <div class="mb-3">
+    <input type="text" name="telegram_chat_id" class="form-control" placeholder="Ваш Telegram chat_id">
+  </div>
+  <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+</form>
+{% endblock %}
